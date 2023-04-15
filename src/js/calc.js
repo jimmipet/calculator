@@ -120,13 +120,6 @@ document.querySelectorAll('button').forEach(button => {
 			}
 	}
 
-	//проверка на длину результат (не работает потом доделать )
-	// const parent = document.querySelector('.calc__screen');
-	// const p = parent.querySelector('p');
-	// let fontSize = '4rem';
-	// while (p.offsetWidth > parent.offsetWidth) {
-	// 	fontSize = parseFloat(fontSize) - 0.1 + 'rem';
-	// 	p.style.fontSize = fontSize;
-	// 	}
+	
 }
 }); 
