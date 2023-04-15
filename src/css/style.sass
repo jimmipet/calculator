@@ -1,0 +1,59 @@
+$color-black:#000
+$color-orange:#ff9501
+$color-grey:#a6a6a6
+$color-white:#fdfdfd
+*
+	box-sizing: border-box
+
+
+.calc
+	margin: 50px auto
+	width: 300px
+	height: 500px
+	border: 1px solid $color-black
+	border-radius: 20px
+	background: $color-black
+	color: $color-white
+	font-family: 'Times New Roman', Times, serif
+	padding: 18px
+	box-shadow: 4px 4px 4px $color-grey
+
+.calc__screen
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+	height: 125px
+	margin-bottom: 20px
+	p
+		font-size: 4rem
+		margin: 0
+
+.calc-box
+	&__buttons
+		display: flex
+		justify-content: space-evenly
+
+.buttons
+	display: inline-block
+	text-align: center
+	width: 60px
+	height: 60px
+	margin-bottom: 5px
+	border-radius: 50px
+	color: $color-white
+	font-size: 20px
+	border: none
+	&:active
+		transform: scale(0.9)
+
+.btn-grey
+	background: $color-grey
+
+.btn-orange
+	background: $color-orange
+
+.btn-black
+	background:#333
+
+.btn_null
+	width: 120px
