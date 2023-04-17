@@ -3,6 +3,8 @@ let b=''; //second number
 let sign=''; // знак операции
 let finish=false;
 
+const audio = new Audio("./src/audio/6a6ad928cfac061.mp3");
+
 const digit=['0', '1', '2', '3', '4','5', '6', '7', '8', '9', '.'];
 const action=['-', '+','x','/'];
 
@@ -31,6 +33,7 @@ function clearALL(){
 document.querySelectorAll('button').forEach(button => {
 	button.onclick = (event) => {
 	const key = event.target.textContent;
+	audio.play();
 	if(key ==='ac'){
 		clearALL();
 		return; //не работает
@@ -120,6 +123,13 @@ document.querySelectorAll('button').forEach(button => {
 			}
 	}
 
-	
+	//проверка на длину результат (не работает потом доделать )
+	// const parent = document.querySelector('.calc__screen');
+	// const p = parent.querySelector('p');
+	// let fontSize = '4rem';
+	// while (p.offsetWidth > parent.offsetWidth) {
+	// 	fontSize = parseFloat(fontSize) - 0.1 + 'rem';
+	// 	p.style.fontSize = fontSize;
+	// 	}
 }
 }); 
